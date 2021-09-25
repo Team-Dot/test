@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Set-DCShadowPermissions",
+        "description": "Modify AD objects to provide minimal permissions required for DCShadow.",
+        "type": "ActiveDirectory",
+        "module": "Nishang"
+    },
+    {
+        "name": "HTTP-Backdoor",
+        "description": "A backdoor which can receive instructions from third party websites and execute PowerShell scripts in memory.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    }
+]
