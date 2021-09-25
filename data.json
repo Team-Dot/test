@@ -10,5 +10,419 @@
         "description": "A backdoor which can receive instructions from third party websites and execute PowerShell scripts in memory.",
         "type": "Backdoors",
         "module": "Nishang"
+    },
+    {
+        "name": "DNS_TXT_Pwnage",
+        "description": "A backdoor which can receive commands and PowerShell scripts from DNS TXT queries, execute them on a target, and be remotely controlled using the queries.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Execute-OnTime",
+        "description": "A backdoor which can execute PowerShell scripts at a given time on a target.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Gupt-Backdoor",
+        "description": "A backdoor which can receive commands and scripts from a WLAN SSID without connecting to it.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Add-ScrnSaveBackdoor",
+        "description": "A backdoor which can use Windows screen saver for remote command and script execution.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-ADSBackdoor",
+        "description": "A backdoor which can use alternate data streams and Windows Registry to achieve persistence.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Add-RegBackdoor",
+        "description": "A backdoor which uses well known Debugger trick to execute payload with Sticky keys and Utilman (Windows key + U).",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Set-RemoteWMI",
+        "description": "Modify permissions of DCOM and WMI namespaces to allow access to a non-admin user.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Set-RemotePSRemoting",
+        "description": "Modify permissions of PowerShell remoting to allow access to a non-admin user.",
+        "type": "Backdoors",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-AmsiBypass",
+        "description": "Implementation of publicly known methods to bypass/avoid AMSI.",
+        "type": "Bypass",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-CHM",
+        "description": "Create infected CHM files which can execute PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-Word",
+        "description": "Create Word files and infect existing ones to run PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-Excel",
+        "description": "Create Excel files and infect existing ones to run PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-HTA",
+        "description": "Create a HTA file which can be deployed on a web server and used in phishing campaigns.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-Java",
+        "description": "Create signed JAR files which can be used with applets for script and command execution.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-Shortcut",
+        "description": "Create shortcut files capable of executing PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-WebQuery",
+        "description": "Create IQY files for phishing credentials and SMB hashes.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-JS",
+        "description": "Create JS files capable of executing PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-SCT",
+        "description": "Create SCT files capable of executing PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-SCF",
+        "description": "Create a SCF file which can be used for capturing NTLM hash challenges.",
+        "type": "Client",
+        "module": "Nishang"
+    },
+    {
+        "name": "Enable-DuplicateToken",
+        "description": "When SYSTEM privileges are required.",
+        "type": "Escalation",
+        "module": "Nishang"
+    },
+    {
+        "name": "Remove-Update",
+        "description": "Introduce vulnerabilities by removing patches.",
+        "type": "Escalation",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PsUACme",
+        "description": "Bypass UAC.",
+        "type": "Escalation",
+        "module": "Nishang"
+    },
+    {
+        "name": "Download-Execute-PS",
+        "description": "Download and execute a PowerShell script in memory.",
+        "type": "Execution",
+        "module": "Nishang"
+    },
+    {
+        "name": "Download_Execute",
+        "description": "Download an executable in text format, convert it to an executable, and execute.",
+        "type": "Execution",
+        "module": "Nishang"
+    },
+    {
+        "name": "Execute-Command-MSSQL",
+        "description": "Run PowerShell commands, native commands, or SQL commands on a MSSQL Server with sufficient privileges.",
+        "type": "Execution",
+        "module": "Nishang"
+    },
+    {
+        "name": "Execute-DNSTXT-Code",
+        "description": "Execute shellcode in memory using DNS TXT queries.",
+        "type": "Execution",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-RundllCommand",
+        "description": "Execute PowerShell commands and scripts or a reverse PowerShell session using rundll32.exe.",
+        "type": "Execution",
+        "module": "Nishang"
+    },
+    {
+        "name": "Check-VM",
+        "description": "Check for a virtual machine.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Copy-VSS",
+        "description": "Copy the SAM file using Volume Shadow Copy Service.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-CredentialsPhish",
+        "description": "Trick a user into giving credentials in plain text.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Get-LSASecret",
+        "description": "Get LSA Secret from a target.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Get-PassHashes",
+        "description": "Get password hashes from a target.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Get-WLAN-Keys",
+        "description": "Get WLAN keys in plain text from a target.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Keylogger",
+        "description": "Log keystrokes from a target.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-MimikatzWdigestDowngrade",
+        "description": "Dump user passwords in plain on Windows 8.1 and Server 2012",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Show-TargetScreen",
+        "description": "Connect back and Stream target screen using MJPEG.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Mimikatz",
+        "description": "Load mimikatz in memory. Updated and with some customisation.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Mimikittenz",
+        "description": "Extract juicy information from target process (like browsers) memory using regex.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-SSIDExfil",
+        "description": "Exfiltrate information like user credentials, using WLAN SSID.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-SessionGopher",
+        "description": "Identify admin jump-boxes and/or computers used to access Unix machines.",
+        "type": "Gather",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Interceptor",
+        "description": "A local HTTPS proxy for MITM attacks.",
+        "type": "MITM",
+        "module": "Nishang"
+    },
+    {
+        "name": "Create-MultipleSessions",
+        "description": "Check credentials on multiple computers and create PSSessions.",
+        "type": "Pivot",
+        "module": "Nishang"
+    },
+    {
+        "name": "Run-EXEonRemote",
+        "description": "Copy and execute an executable on multiple machines.",
+        "type": "Pivot",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-NetworkRelay",
+        "description": "Create network relays between computers.",
+        "type": "Pivot",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Prasadhak",
+        "description": "Check running hashes of running process against the VirusTotal database.",
+        "type": "Prasadhak",
+        "module": "Nishang"
+    },
+    {
+        "name": "Brute-Force",
+        "description": "Brute force FTP, Active Directory, MSSQL, and Sharepoint.",
+        "type": "Scan",
+        "module": "Nishang"
+    },
+    {
+        "name": "Port-Scan",
+        "description": "A handy port scanner.",
+        "type": "Scan",
+        "module": "Nishang"
+    },
+    {
+        "name": "Powerpreter",
+        "description": "All the functionality of nishang in a single script module.",
+        "type": "Powerpreter",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PsGcat",
+        "description": "Send commands and scripts to specifed Gmail account to be executed by Invoke-PsGcatAgent",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PowerShellTcp",
+        "description": "An interactive PowerShell reverse connect or bind shell",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PowerShellTcpOneLineBind",
+        "description": "Bind version of Invoke-PowerShellTcpOneLine.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PowerShellUdp",
+        "description": "An interactive PowerShell reverse connect or bind shell over UDP",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PoshRatHttps",
+        "description": "Reverse interactive PowerShell over HTTPS.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PoshRatHttp",
+        "description": "Reverse interactive PowerShell over HTTP.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Remove-PoshRat",
+        "description": "Clean the system after using Invoke-PoshRatHttps",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-PowerShellIcmp",
+        "description": "An interactive PowerShell reverse shell over ICMP.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-JSRatRundll",
+        "description": "An interactive PowerShell reverse shell over HTTP using rundll32.exe.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-JSRatRegsvr",
+        "description": "An interactive PowerShell reverse shell over HTTP using regsvr32.exe.",
+        "type": "Shells",
+        "module": "Nishang"
+    },
+    {
+        "name": "Add-Exfiltration",
+        "description": "Add data exfiltration capability to Gmail, Pastebin, a web server, and DNS to any script.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Add-Persistence",
+        "description": "Add reboot persistence capability to a script.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Remove-Persistence",
+        "description": "Remote persistence added by the Add-Persistence script.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Do-Exfiltration",
+        "description": "Pipe (|) this to any script to exfiltrate the output.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Download",
+        "description": "Transfer a file to the target.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Parse_Keys",
+        "description": "Parse keys logged by the keylogger.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Encode",
+        "description": "Encode and compress a script or string.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Invoke-Decode",
+        "description": "Decode and decompress a script or string from Invoke-Encode.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Start-CaptureServer",
+        "description": "Run a web server which logs Basic authentication and SMB hashes.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "ConvertTo-ROT13",
+        "description": "Encode a string to ROT13 or decode a ROT13 string.",
+        "type": "Utility",
+        "module": "Nishang"
+    },
+    {
+        "name": "Out-DnsTxt",
+        "description": "Generate DNS TXT records which could be used with other scripts.",
+        "type": "Utility",
+        "module": "Nishang"
     }
 ]
