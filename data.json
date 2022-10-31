@@ -424,5 +424,11 @@
         "description": "Generate DNS TXT records which could be used with other scripts.",
         "type": "Utility",
         "module": "Nishang"
+    },
+        {
+        "name": "Out-Shortcut",
+        "description": "Create shortcut files capable of executing PowerShell commands and scripts.",
+        "type": "Client",
+        "module": "Nishang"
     }
 ]
